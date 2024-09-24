@@ -173,10 +173,6 @@ input[type='checkbox'].search-form__checkbox:checked+.search-form__pseudo-checkb
     overflow-y: auto;
 }
 
-.content__list::-webkit-scrollbar {
-    display: none;
-}
-
 .content__list-item:not(:last-of-type) {
     margin-bottom: 30px;
 }
