@@ -20,6 +20,7 @@
 .result__video-container {
     position: relative;
     width: 711px;
+    height: 386px;
     margin-bottom: 16px;
 }
 
@@ -56,8 +57,8 @@
     width: 225px;
     height: 27px;
     border: none;
-    border-top: 1px solid white;
-    border-bottom: 1px solid white;
+    border-top: 1px solid currentColor;
+    border-bottom: 1px solid currentColor;
     outline: none;
     color: white;
     font-family: "Fira Sans Condensed", sans-serif;
@@ -68,8 +69,13 @@
     appearance: none;
 }
 
+.search-form__textfield:focus {
+    border: none;
+    outline: none;
+}
+
 .search-form__label:has(:focus-visible) {
-    outline: 1px solid white;
+    outline: 1px solid currentColor;
     outline-offset: 2px;
 }
 
@@ -84,13 +90,14 @@
     width: 19px;
     height: 19px;
     margin-top: 1px;
-    border: 1px solid white;
+    border: 1px solid currentColor;
+    color: white;
     background-color: transparent;
 }
 
 .search-form__checkbox:active+.search-form__pseudo-checkbox,
 input[type='checkbox'].search-form__checkbox:checked+.search-form__pseudo-checkbox {
-    outline: 7px solid white;
+    outline: 7px solid currentColor;
     outline-offset: -10px;
 }
 
@@ -100,12 +107,12 @@ input[type='checkbox'].search-form__checkbox:checked+.search-form__pseudo-checkb
     cursor: pointer;
 }
 
-button {
+.button {
     position: relative;
-    border: 1px solid white;
+    border: 1px solid currentColor;
     padding: 6px 0;
     outline: 0;
-    color: currentColor;
+    color: white;
     font-family: "Fira Sans Condensed", sans-serif;
     font-weight: 700;
     font-size: 18px;
@@ -115,16 +122,20 @@ button {
     cursor: pointer;
 }
 
-button:active {
+.button:active {
     background-color: rgba(84, 80, 80, 1);
 }
 
-button:hover {
+.button:hover {
     text-decoration: underline;
 }
 
-button:focus-visible {
-    outline: 1px solid white;
+.button:focus {
+    outline: none;
+}
+
+.button:focus-visible {
+    outline: 1px solid currentColor;
     outline-offset: 2px;
 }
 
